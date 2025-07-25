@@ -1,7 +1,14 @@
-import create from 'zustand'
+import RecipeList from "./components/RecipeList";
+import AddRecipeForm from "./components/AddRecipeForm";
 
-const useRecipeStore = create(set => ({
-  recipes: [],
-  addRecipe: (newRecipe) => set(state => ({recipes: [...state.recipes, newRecipe] })),
-  setRecipes: (recipes) => set({ recipes })
-}));
+const App = () => {
+  return (
+    <div style={{ margin: '2.5rem'}}>
+      <h1>Recipe App</h1>
+    <AddRecipeForm />
+    <RecipeList />
+    </div>
+  );
+}
+
+export default App;
