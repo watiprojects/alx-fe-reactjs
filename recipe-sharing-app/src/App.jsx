@@ -5,8 +5,8 @@ const App = () => {
   return (
     <div style={{ margin: '2.5rem'}}>
       <h1>Recipe App</h1>
-    <AddRecipeForm />
-    <RecipeList />
+    <EditRecipeForm />
+    <DeleteRecipe />
     </div>
   );
 }
